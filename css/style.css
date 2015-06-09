@@ -230,7 +230,7 @@ a {
 	display: none;
 }
 
-.shop_categories a{
+.shop_category a{
 	text-decoration: none;
 	display: block;
 	width: 90%;
@@ -744,6 +744,11 @@ a {
 
 }
 
+.arrow1 {
+	background-image: url(../img/arrow1_03.png);
+	background-repeat: no-repeat;
+	background-position:80% center;
+}
 
 
 .header_bar {
@@ -782,6 +787,7 @@ a {
 	background-size: 30px 30px;
 	background-position: 5% center;
 	padding-left: 5%; 
+	position: relative;
 }
 
 .main_nav_container:hover {
@@ -793,6 +799,79 @@ a {
 	background-position: 5% center;
 	padding-left: 5%;
 	
+}
+
+.top_nav {
+	background: #454545;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	z-index: 1000;
+}
+
+.top_nav > li:hover {
+	background: #333333;
+
+}
+
+.top_nav li{
+	list-style: none;
+	margin: 0;
+}
+
+.top_nav > li {
+	border-top: 1px solid #6e6e6e;
+	border-bottom: 1px solid #2a2a2a;
+	padding: 5%;
+}
+
+.top_nav a{
+	color: white;
+	font-size: 0.8em;
+}
+
+.lev_2_nav {
+	display: none;
+	position: absolute;
+	left: 100%;
+	top: 0;
+	width: 400%;
+	background: white;
+	border: 1px solid #cccccc;
+	border-radius: 0 5px 5px 0;
+	padding: 5%;
+	height: 541px;
+	z-index: 1000;
+}
+
+.lev_2_nav.active {
+	display: block;
+}
+
+.lev_2_nav .lev_2_col{
+	width: 24%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.lev_2_col {
+	margin-bottom: 15px;
+}
+
+.lev_2_col > ul > li > a{
+	font-size: 1em;
+	font-weight: bold;
+	line-height: 3;
+	color: #333333;
+
+}
+
+.lev_2_nav a{
+	color: black;
 }
 
 .header_menu_button {
@@ -891,7 +970,7 @@ select option {
 	font-size: 1em;
 	font-weight: bold;
 	float: right;
-	width: 20%;
+	width: 22%;
 	padding-left: 4%;
 	height: 48px;
 }
@@ -940,12 +1019,20 @@ select option {
 }
 
 .side_bar_nav a{
-	font-size: 0.6em;
+	font-size: 1.3em;
 	color: black;
 	font-weight: bold;
 	line-height: 1.6;
 }
 
+.side_bar_ul {
+	padding: 0;
+	margin: 0;
+}
+
+.side_bar_ul > li > a {
+	font-size: 1.7em
+}
 .side_bar_nav > nav > ul > li {                                                                                         
 	font-size: 1.3em;
 	padding-top: 15px;
@@ -964,6 +1051,9 @@ select option {
 
 .side_bar_sub_nav {
 	list-style: none;
+	padding:0;
+	margin: 0;
+	margin-top: 10px;
 }
 
 .category_title h1 {
@@ -974,46 +1064,74 @@ select option {
 	padding-top: 0;
 }
 
-
 .shop_categories {
 	float: left;
 	margin: 0;
 	width: 46%;
 	border-right: 1px solid #727578;
-	border-bottom: 1px solid #727578;
+	/*border-bottom: 1px solid #727578;*/
 	margin-bottom: 50px;
-}
-
-
-.shop_categories h2 {
-/*	margin-bottom: 65px;
-	margin-top: 15px;*/
-	margin:0;
-}
-
-.shop_categories a{
-	background: none;
-	color: black;
-	border-radius: none;
-	text-align: left;
-	padding-top: 0;
-	padding-bottom: 0;
-	margin: 0;
-	float: left;
-	width: 33%;
-	margin-bottom: 50px;
-	display: block;
-}
-
-.shop_categories h3 {
-	font-size: 1.3em;
-	width: 65%;
+	padding-bottom: 97px;
+	margin-top: 50px;
 }
 
 .shop_categories img{
 	display: block;
-	width: 70%;
-	
+	width: 57%;
+}
+
+.shop_category h3 {
+	font-size: 1.3em;
+	width: 65%;
+}
+
+.shop_category {
+	width: 32%;
+	display: inline-block;
+	position: relative;
+	vertical-align: top;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.cat_links {
+	display: none;
+	position: absolute;
+	bottom:12px;
+	right:39%;
+	left:0;
+	padding: 0;
+	margin: 0;
+}
+
+
+.cat_links li {
+	list-style: none;
+	display: block;
+}
+
+.cat_links > li > a{
+	display: block;
+	width: 100%;
+	padding: 2%;
+	color: #b50000;
+}
+
+.shop_category:hover img{
+	opacity: 0.2;
+
+}
+
+.shop_category:hover .cat_links {
+	display: block;
+}
+
+.shop_category a{
+	background: none;
+	color: black;
+	border-radius: none;
+	padding:0;
+	margin:0;
 }
 
 .featured_items_mobile{
@@ -1035,6 +1153,7 @@ select option {
 .kid_bikes_image {
 	float: none;
 	margin: 0;
+	width: 100%;
 }
 
 .kid_bikes {
@@ -1044,58 +1163,15 @@ select option {
 	margin-top: 30px;
 }
 
-
-/*
-.bikes {
-	border-right: 1px solid #727578;
-	border-bottom: 1px solid #727578;
+#owl-demo .item{
+  margin: 3px;
 }
 
-.boating {
-	border-bottom: 1px solid #727578;
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
-
-.camping {
-	border-bottom: 1px solid #727578;
-	border-left: 1px solid #727578;
-}
-
-.coolers {
-	border-right: 1px solid #727578;
-	border-bottom: 1px solid #727578;
-}
-
-.exercise {
-	border-bottom: 1px solid #727578;
-	border-right: 1px solid #727578;
-}
-
-.pools {
-	border-bottom: 1px solid #727578;
-}
-
-.fans {
-	border-right: 1px solid #727578;
-}
-
-.scooters {
-	border-bottom: 1px solid #727578;
-	border-right: 1px solid #727578;
-}
-
-.toys {
-	border-bottom: 1px solid #727578;
-}
-
-.sports_equipment {
-	border-right: 1px solid #727578;
-	border-top: 1px solid #727578;
-}
-
-.game_room {
-	border-right: 1px solid #727578;
-}
-*/
 
 .top_rated {
 	width: 70%;
