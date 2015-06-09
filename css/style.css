@@ -29,6 +29,8 @@ html {
 	red  =  #b50000
 	other red    = #cc0000
 
+	hover red  =  #990000
+
 	gray font  =  #727578
 
 	light gray background  =  #cccccc
@@ -38,6 +40,7 @@ html {
 
 body {
 	font-family: "Helvetica Neue";
+	margin: 0;
 }
 
 
@@ -70,8 +73,6 @@ a {
 /** mobile site **/
 
 
-
-
 .main_header_logo {
 	display: none;
 }
@@ -82,45 +83,85 @@ a {
 
 .across_page_header {
 	border-bottom: 1px solid #727578;
-	height: 35px;
 }
 
 .mobile_logo {
-	height: 30px;
-	margin-left: 43%;
+	display: block;
+	width: 12%;
+	margin: 0 auto;
+}
+
+.mobile_logo img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 
-.shopping_cart_icon{
-	height: 23px;
+.shopping_cart_icon {
+	width: 6%;
+	display: block;
 	float: right;
+}
+
+.shopping_cart_icon img {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 .man_profile_icon {
-	height: 23px;
+	display: block;
+	width: 6%;
 	float: right;
-	margin-right: 1%;
+
 }
 
+.man_profile_icon img {
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+.main_nav_container {
+
+}
 
 .menu_button {
-	height: 17px;
+	display: block;
+	width: 10%;
 	float: left;
+	margin-left: 5%;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+
+.menu_button img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 .wide_menu_button {
 	display: none;
+	width: 30%;
 }
 
 
 .search_icon {
+	display: block;
+	width: 6%;
 	float: left;
-	height: 20px;
-	margin-left: 5%;
+}
+
+.search_icon img{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 .header_nav{
-	display: none;
+	display: block;
 }
 
 
@@ -227,8 +268,9 @@ a {
 
 
 .watch img{
-	height: 100px;
-
+	display: block;
+	width: 75%;
+	margin: 0 auto;
 }
 
 
@@ -282,14 +324,19 @@ a {
 
 
 .kid_bikes_image {
-	float: left;
-	width: 40%;
+	display: block;
+	width: 65%;
+}
+
+.kid_bikes_image img{
+	display: block;
+	width: 100%;
+
 }
 
 .kid_bikes {
-	float: left;
-	width:40%;
-	margin-left: 15%;
+	float: right;
+	width:50%;
 }
 
 .kid_bikes h4, .kid_bikes a, .fathers_day_words h4, .fathers_day_words a{
@@ -304,12 +351,23 @@ a {
 	font-size: 0.8em;
 }
 
+.kid_bikes h4{
+	font-size: 1.7em;
+}
+
+.kid_bikes a, .fathers_day_words a{
+	margin-top: 10px;
+}
+
+.pool_image {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
 .pool_image img{
-	clear: both;
-	height: 350px;
-	margin-top: 20px;
+	display: block;
 	width: 100%;
-	padding: 5% 10%;
 	/*box-shadow: 1px 1px 5px #727578; */
 }
 
@@ -323,16 +381,22 @@ a {
 	
 .fathers_day_words{
 	float: left;
-	width: 40%;
+	width: 50%;
 }
 
+ .fathers_day_words h4{
+ 	font-size: 1.2em;
+ }
+
 .fathers_day_image{
-	float: left;
-	width: 60%;
+	display: block;
+	width: 50%;
+	float: right;
 }
 
 .fathers_day_image img{
-	height: 100px;
+	display: block;
+	width: 100%;
 }
 
 .pre_footer_p1, .pre_footer_p2 {
@@ -357,27 +421,49 @@ a {
 	padding-bottom: 50px;
 }
 
+.footer_nav {
+	float: right;
+	width: 87%;
+	font-size: 0.8em;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
 .footer_nav ul{
 	float: right;
-	width: 84%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
 }
 
 .footer_nav li{
 	list-style: none;
 	display: inline-block;
-	padding: 3%;
+	width: 19%;
+}
+
+.sub_menu{
+	display: block;
+}
+
+.sub_menu li{
+	display: block;
 }
 
 
 .footer_logo {
-	width: 15%;
-	float: right;
+	display: block;
+	width: 7%;
+	float: left;
+	margin-left: 2%;
+	margin-top: 2%;
 }
 
 .footer_logo img{
-	height: 70px;
-	padding-top: 20px;
-	margin-left: 26%;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
 }
 
 .viewed_items{
@@ -385,26 +471,24 @@ a {
 }
 
 .secondary_footer_nav ul{
-	margin: 0;
-	padding: 0;
-	float: left;
-	width: 100%;
-	margin-top: 20px;
-	margin-bottom: 30px;
-	padding-top: 20px;
-	padding-left: 5%;
+	margin: 0 auto;
+	width: 90%;
+	display: inline-block;
 }
 
 .secondary_footer_nav li{
 	list-style: none;
+	display: inline-block;
+	padding-left: 1%;
 }
 
 .secondary_footer_nav_p{
-	clear: both;
-	padding-top: 10px;
-	margin-top: 30px;
+	width: 90%;
+	margin: 0 auto;
 	border-top: 1px solid #727578;
-	padding-left: 5%;
+	font-size: 0.5em;
+	margin-left: 7%;
+	
 }
 
 .third_footer_nav {
@@ -413,22 +497,6 @@ a {
 
 
 
-
-
-
-
-
-@media screen and (min-width: 425px) {
-
-	.fathers_day_image img {
-		height: 120px;
-	}
-	
-
-
-
-
-}
 
 
 
@@ -489,11 +557,11 @@ a {
 	}
 
 	.watch img {
-		height: 130px;
+		
 	}
 
 	.kid_bikes_image img{
-		height: 200px;
+		
 	}
 
 	.top_rated{
@@ -501,11 +569,11 @@ a {
 	}
 
 	.pool_image img{
-		height: 450px;
+		
 	}
 
 	.fathers_day_image img{
-		height: 200px;
+		
 	}
 
 	.pre_footer_p1, .pre_footer_p2 {
@@ -524,7 +592,6 @@ a {
 	.pool_image img {
 		float: left;
 		width: 44%;
-		height: 250px;
 		margin: 16px 2% 0 5%;
 		padding: 0;
 	}
@@ -534,11 +601,10 @@ a {
 		width: 43%;
 		margin: 0;
 		margin-top: 17px;
-		height: 250px;
 	}
 
 	.fathers_day_image img{
-		height: 150px;
+
 	}
 
 
@@ -621,11 +687,15 @@ a {
 
 
 .main_header_logo {
-	height: 55px;
+	display: block;
+	width: 5%;
 	float: left;
-	display: inline-block;
 }
 
+.main_header_logo img{
+	display: block;
+	width: 100%;
+}
 
 .header_wrapper {
 	width: 75%;
@@ -666,6 +736,15 @@ a {
 	
 }
 
+.arrow{
+	background-image: url(../img/arrow_down_03.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 1%;
+
+}
+
+
 
 .header_bar {
 	background: #cc0000;
@@ -674,21 +753,59 @@ a {
 	height: 50px;
 	margin-top: -35px;
 	border-radius: 5px;
+	border-top: 1px solid #f44a2a;
 }
 
 .flower{
-	height: 30px;
+	background-image: url( ../img/Target_flower.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: left top;
+	padding-left: 5%;
+
+}
+.shop_all{
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	margin-top: 11px;
+	float: left;
+	margin-right: 1%;
+}
+
+.main_nav_container {
+	width: 20%;
+	float: left;
+	height: 48px;
+	background-image: url( ../img/menu52.png);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: 5% center;
+	padding-left: 5%; 
+}
+
+.main_nav_container:hover {
+	background: #990000;
+	border-radius: 5px;
+	background-image: url( ../img/menu52.png);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+	background-position: 5% center;
+	padding-left: 5%;
+	
 }
 
 .header_menu_button {
+	display: block;
+	width: 11%;
 	float: left;
-	margin-left: 1%;
-  	margin-top: 11px;
+	margin: 15px 1% 0 1%;
 }
 
-.wide_menu_button {
+.header_menu_button img {
+	width: 100%;
+	margin: 0 auto;
 	display: block;
-	height: 21px;
 }
 
 .header_categories {
@@ -705,10 +822,6 @@ fieldset {
 	border: none;
 }
 
-.in_your_card {
-	display: block;
-	float: left;
-}
 
 .free_shipping_header {
 	display: none;
@@ -737,6 +850,9 @@ fieldset {
 select {
 	width: 8%;
 	margin-right: 0;
+	padding: 1%;
+	-webkit-appearance: none;
+	border-radius: none;
 }
 
 select option {
@@ -745,8 +861,8 @@ select option {
 }
 
 .search_bar {
-	width: 63%;
-	padding: 1%;
+	width: 58%;
+	margin-top: 7px;
 }
 
 .text_area{
@@ -755,19 +871,62 @@ select option {
 	padding: 1%;
 }
 
-.submit_button img{
-	height: 28px;
+.submit_button{
+	display: block;
 	width: 7%;
 	float: right;
+
+}
+
+.submit_button img{
+	display: block;
+	width: 100%;
 }
 
 .in_your_cart {
 	display: block;
+	position: relative;
+	z-index: 10000;
 	color: white;
-	font-size: 1.2em;
+	font-size: 1em;
 	font-weight: bold;
-	width: 25%;
-	margin-left: 85%;
+	float: right;
+	width: 20%;
+	padding-left: 4%;
+	height: 48px;
+}
+
+
+.in_your_cart:hover {
+	background: #990000;
+	border-radius: 5px;
+}
+
+.in_your_cart:hover .hidden_cart{
+	display: block;
+}
+
+.hidden_cart{
+	display: none;
+	color: black;
+	background: white;
+	border: 1px solid #cccccc;
+	border-radius: 0 0 5px 5px;
+	position: absolute;
+	width: 140%;
+	top: 100%;
+	right: 0;
+	text-align: center;
+	overflow: hidden;
+}
+
+.hidden_cart a:last-child {
+	background: #c60000;
+	color: white;
+	font-size: 1em;
+	padding: 3%;
+	display: block;
+	margin-top: 10px;
 }
 
 .side_bar_nav {
@@ -781,24 +940,26 @@ select option {
 }
 
 .side_bar_nav a{
-	font-size: 0.9em;
+	font-size: 0.6em;
 	color: black;
 	font-weight: bold;
 	line-height: 1.6;
 }
 
-.side_bar_nav > nav > ul > li {
+.side_bar_nav > nav > ul > li {                                                                                         
 	font-size: 1.3em;
 	padding-top: 15px;
 	margin-top: 15px;
 	border-top: 1px solid #727578;
 	list-style: none;
+	font-size: 0.6em;
 }
 
 .side_bar_nav nav > ul > li:first-child {
 	border-top: none;
 	padding-top: 0;
 	margin-top: 20px;
+
 }
 
 .side_bar_sub_nav {
@@ -841,7 +1002,7 @@ select option {
 	float: left;
 	width: 33%;
 	margin-bottom: 50px;
-	height: 200px;
+	display: block;
 }
 
 .shop_categories h3 {
@@ -851,7 +1012,8 @@ select option {
 
 .shop_categories img{
 	display: block;
-	height: 100px;
+	width: 70%;
+	
 }
 
 .featured_items_mobile{
@@ -958,6 +1120,7 @@ select option {
 
 .pool_image img {
 	float: left;
+	display: block;
 	width: 100%;
 }
 
@@ -982,7 +1145,8 @@ select option {
 }
 
 .fathers_day_image img {
-	height: 200px;
+	display: block;
+	width: ;
 }
 
 .discounted_mobile {
